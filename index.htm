@@ -10,8 +10,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="dist/style.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <link rel="shortcut icon" href="images/caveman.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EMMA'S PORTFOLIO</title>
@@ -19,13 +18,25 @@
   <body>
     <nav>
       <img src="images/caveman.png" alt="" />
-      <ul>
-        <li><a href="#about" title="about">about</a></li>
-        <li><a href="#exp" title="experience">experience</a></li>
-        <li><a href="#work" title="work">work</a></li>
-        <li><a href="#contact" title="contact">contact</a></li>
-      </ul>
-      <button>resume</button>
+      <div class="nav-wrapper" data-visible="false">
+        <ul>
+          <li><span>01.</span><a href="#about" title="about">about</a></li>
+          <li>
+            <span>02.</span><a href="#exp" title="experience">experience</a>
+          </li>
+          <li><span>03.</span><a href="#work" title="work">work</a></li>
+          <li>
+            <span>04.</span><a href="#contact" title="contact">contact</a>
+          </li>
+          <button>resume</button>
+        </ul>
+      </div>
+
+      <div class="hamburger" aria-expanded="false" id="hamburger">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
     </nav>
 
     <div class="side" title="fixedsidebar">
@@ -112,11 +123,15 @@
     </section>
 
     <section id="exp">
-        <h1>
-            .02 my experiences
-            <div class="hline"></div>
-          </h1>
-          <p>I have not worked in any official firm as at the time of launching of this website , but I've worked on a lot of personal projects and looking to contribute to open source</p>
+      <h1>
+        .02 my experiences
+        <div class="hline"></div>
+      </h1>
+      <p>
+        I have not worked in any official firm as at the time of launching of
+        this website , but I've worked on a lot of personal projects and looking
+        to contribute to open source
+      </p>
     </section>
 
     <section id="work">
@@ -127,24 +142,52 @@
       <div class="work-wrapper">
         <div class="each-work">
           <div class="imgdv">
-            <a target="_blank" href="https://candid-puffpuff-23283e.netlify.app/">
+            <a
+              target="_blank"
+              href="https://candid-puffpuff-23283e.netlify.app/"
+            >
               <img src="images/flowerly.png" alt="" />
             </a>
           </div>
 
-          <h1 title="flowerly">flowerly <a target="_blank" href="https://github.com/EMMANUEL-SUNMBOLA/FLOWERLY"><i class="fa-brands fa-github"></i></a><a target="_blank" href="https://candid-puffpuff-23283e.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h1>
+          <h1 title="flowerly">
+            flowerly
+            <a
+              target="_blank"
+              href="https://github.com/EMMANUEL-SUNMBOLA/FLOWERLY"
+              ><i class="fa-brands fa-github"></i></a
+            ><a
+              target="_blank"
+              href="https://candid-puffpuff-23283e.netlify.app/"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </h1>
           <span><i class="fa-brands fa-html5"></i></span>
           <span><i class="fa-brands fa-css3"></i></span>
           <span><i class="fa-brands fa-sass"></i></span>
         </div>
         <div class="each-work">
           <div class="imgdv">
-            <a target="_blank" href="https://gilded-sunburst-9a9a3a.netlify.app/">
+            <a
+              target="_blank"
+              href="https://gilded-sunburst-9a9a3a.netlify.app/"
+            >
               <img src="images/jerk tarvels.png" alt="" />
             </a>
           </div>
 
-          <h1 title="jerk travels">jerk travels <a target="_blank" href="https://github.com/EMMANUEL-SUNMBOLA/travels-and-tours"><i class="fa-brands fa-github"></i></a><a target="_blank" href="https://gilded-sunburst-9a9a3a.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h1>
+          <h1 title="jerk travels">
+            jerk travels
+            <a
+              target="_blank"
+              href="https://github.com/EMMANUEL-SUNMBOLA/travels-and-tours"
+              ><i class="fa-brands fa-github"></i></a
+            ><a
+              target="_blank"
+              href="https://gilded-sunburst-9a9a3a.netlify.app/"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </h1>
           <span><i class="fa-brands fa-html5"></i></span>
           <span><i class="fa-brands fa-css3"></i></span>
           <span><i class="fa-brands fa-sass"></i></span>
@@ -158,7 +201,14 @@
             </a>
           </div>
 
-          <h1 title="built by buffalo  ">built by buffalo <a target="_blank" href="https://github.com/EMMANUEL-SUNMBOLA/builtbybuffalo-clone"><i class="fa-brands fa-github"></i></a></h1>
+          <h1 title="built by buffalo  ">
+            built by buffalo
+            <a
+              target="_blank"
+              href="https://github.com/EMMANUEL-SUNMBOLA/builtbybuffalo-clone"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </h1>
           <span><i class="fa-brands fa-html5"></i></span>
           <span><i class="fa-brands fa-css3"></i></span>
           <span><i class="fa-brands fa-sass"></i></span>
@@ -171,7 +221,13 @@
           <span></span>
         </div> -->
       </div>
-      <button><a target="_blank" href="https://github.com/EMMANUEL-SUNMBOLA?tab=repositories">wanna see more <i class="fa-sharp fa-solid fa-arrow-right"></i></a></button>
+      <button>
+        <a
+          target="_blank"
+          href="https://github.com/EMMANUEL-SUNMBOLA?tab=repositories"
+          >wanna see more <i class="fa-sharp fa-solid fa-arrow-right"></i
+        ></a>
+      </button>
     </section>
 
     <section class="contact" id="contact">
@@ -195,5 +251,6 @@
         >CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-</marquee
       >
     </footer>
+    <script src="/main.js"></script>
   </body>
 </html>
