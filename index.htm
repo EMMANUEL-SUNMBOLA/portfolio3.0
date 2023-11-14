@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EMMA'S PORTFOLIO</title>
   </head>
+
   <body>
     <nav>
       <img src="images/caveman.png" alt="" />
@@ -86,6 +87,9 @@
         obcaecati. Dolorem vitae quidem aliquid voluptates! Suscipit sequi error
         est.
       </p>
+      <a href="#work" class="view_work">
+        <div>View my work</div>
+      </a>
     </main>
 
     <section class="heading-section about" id="about">
@@ -139,9 +143,12 @@
         <span class="sub-heading-numbering">.03</span> some things I've built
         <div class="hline"></div>
       </h1>
-      <div class="work-wrapper">
-        <div class="each-work">
-          <div class="imgdv">
+
+      <div class="work-wrapper projects-container">
+        <!-- flowerly -->
+
+        <div class="each-work project-card">
+          <div class="image-container imgdv">
             <a
               target="_blank"
               href="https://candid-puffpuff-23283e.netlify.app/"
@@ -149,9 +156,8 @@
               <img src="images/flowerly.png" alt="" />
             </a>
           </div>
-
-          <h1 title="flowerly">
-            flowerly
+          <div class="project-details">
+            <h1 title="flowerly">flowerly</h1>
             <a
               target="_blank"
               href="https://github.com/EMMANUEL-SUNMBOLA/FLOWERLY"
@@ -161,77 +167,86 @@
               href="https://candid-puffpuff-23283e.netlify.app/"
               ><i class="fa-solid fa-arrow-up-right-from-square"></i
             ></a>
-          </h1>
-          <span><i class="fa-brands fa-html5"></i></span>
-          <span><i class="fa-brands fa-css3"></i></span>
-          <span><i class="fa-brands fa-sass"></i></span>
+          </div>
+          <div class="icons">
+            <span><i class="fa-brands fa-html5"></i></span>
+            <span><i class="fa-brands fa-css3"></i></span>
+            <span><i class="fa-brands fa-sass"></i></span>
+          </div>
         </div>
-        <div class="each-work">
-          <div class="imgdv">
+        <!-- jerk travels -->
+
+        <div class="each-work project-card">
+          <div class="image-container imgdv">
             <a
               target="_blank"
-              href="https://gilded-sunburst-9a9a3a.netlify.app/"
+              href="https://candid-puffpuff-23283e.netlify.app/"
             >
-              <img src="images/jerk tarvels.png" alt="" />
+              <img src="images/flowerly.png" alt="" />
             </a>
           </div>
-
-          <h1 title="jerk travels">
-            jerk travels
+          <div class="project-details">
+            <h1 title="flowerly">flowerly</h1>
             <a
               target="_blank"
-              href="https://github.com/EMMANUEL-SUNMBOLA/travels-and-tours"
+              href="https://github.com/EMMANUEL-SUNMBOLA/FLOWERLY"
               ><i class="fa-brands fa-github"></i></a
             ><a
               target="_blank"
-              href="https://gilded-sunburst-9a9a3a.netlify.app/"
+              href="https://candid-puffpuff-23283e.netlify.app/"
               ><i class="fa-solid fa-arrow-up-right-from-square"></i
             ></a>
-          </h1>
-          <span><i class="fa-brands fa-html5"></i></span>
-          <span><i class="fa-brands fa-css3"></i></span>
-          <span><i class="fa-brands fa-sass"></i></span>
-        </div>
-      </div>
-      <div class="work-wrapper">
-        <div class="each-work">
-          <div class="imgdv">
-            <a target="_blank" href="">
-              <img src="images/Screenshot 2022-11-22 133706.png" alt="" />
-            </a>
           </div>
+          <div class="icons">
+            <span><i class="fa-brands fa-html5"></i></span>
+            <span><i class="fa-brands fa-css3"></i></span>
+            <span><i class="fa-brands fa-sass"></i></span>
+          </div>
+        </div>
+        <!-- buiild by .... -->
 
-          <h1 title="built by buffalo  ">
-            built by buffalo
+        <div class="each-work project-card">
+          <div class="image-container imgdv">
             <a
               target="_blank"
-              href="https://github.com/EMMANUEL-SUNMBOLA/builtbybuffalo-clone"
-              ><i class="fa-brands fa-github"></i
+              href="https://candid-puffpuff-23283e.netlify.app/"
+            >
+              <img src="images/flowerly.png" alt="" />
+            </a>
+          </div>
+          <div class="project-details">
+            <h1 title="flowerly">flowerly</h1>
+            <a
+              target="_blank"
+              href="https://github.com/EMMANUEL-SUNMBOLA/FLOWERLY"
+              ><i class="fa-brands fa-github"></i></a
+            ><a
+              target="_blank"
+              href="https://candid-puffpuff-23283e.netlify.app/"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
             ></a>
-          </h1>
-          <span><i class="fa-brands fa-html5"></i></span>
-          <span><i class="fa-brands fa-css3"></i></span>
-          <span><i class="fa-brands fa-sass"></i></span>
+          </div>
+          <div class="icons">
+            <span><i class="fa-brands fa-html5"></i></span>
+            <span><i class="fa-brands fa-css3"></i></span>
+            <span><i class="fa-brands fa-sass"></i></span>
+          </div>
         </div>
-        <!-- <div class="each-work">
-          <a target="_blank" href="">
-
-          </a><img src="images/" alt="" />
-          <h1></h1>
-          <span></span>
-        </div> -->
       </div>
-      <button>
-        <a
-          target="_blank"
-          href="https://github.com/EMMANUEL-SUNMBOLA?tab=repositories"
-          >wanna see more <i class="fa-sharp fa-solid fa-arrow-right"></i
-        ></a>
-      </button>
+
+      <a
+        target="_blank"
+        href="https://github.com/EMMANUEL-SUNMBOLA?tab=repositories"
+        class="view_work see_more"
+        ><div>
+          wanna see more <i class="fa-sharp fa-solid fa-arrow-right"></i></div
+      ></a>
     </section>
 
-    <section class="contact" id="contact">
-      <h5>.04 what's next</h5>
+    <section class="contact heading-section" id="contact">
+      <h5 class="sub-heading">
+        <span class="sub-heading-numbering">.04 what's next </span>
+      </h5>
       <h1>get in touch</h1>
       <p>Got a question or proposal , or just want to say hello ? Go ahead.</p>
       <form action="">
@@ -244,12 +259,17 @@
         /><br />
         <button type="submit">Shoot</button>
       </form>
+      <div class="icon-box">
+        <div class="icon-wrapper"><i class="fa-brands fa-github"></i></div>
+        <div class="icon-wrapper"><i class="fa-brands fa-github"></i></div>
+        <div class="icon-wrapper"><i class="fa-brands fa-github"></i></div>
+      </div>
     </section>
 
     <footer>
-      <marquee behavior="" direction="right"
-        >CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-</marquee
-      >
+      <marquee behavior="" direction="right">
+        CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-
+      </marquee>
     </footer>
     <script src="/main.js"></script>
   </body>
