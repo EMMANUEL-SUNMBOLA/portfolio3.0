@@ -107,3 +107,32 @@ nav {
     padding: 1rem 3rem;
   }
 }
+@media (min-width: 1024px) {
+  nav {
+    .hamburger {
+      display: none;
+    }
+    .nav-wrapper {
+      position: static;
+      flex-direction: row;
+      transform: translateX(0);
+      width: 100%;
+      background-color: transparent;
+      padding: 0;
+      ul {
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5%;
+      }
+    }
+  }
+  button {
+    padding: 1rem;
+    margin: 0;
+    width: auto;
+    height: auto;
+  }
+}
