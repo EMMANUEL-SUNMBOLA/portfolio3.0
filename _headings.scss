@@ -20,7 +20,7 @@
       font-size: 1rem;
       padding-right: 0.5rem;
       color: variables.$light-green;
-      font-family: monospace;
+      font-family: "Roboto Mono", monospace;
     }
 
     .hline {
@@ -92,6 +92,17 @@
     padding-inline: 3rem;
     .sub-heading {
       font-size: 1.4rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .pmg {
+    // for centered image comment the code below
+    display: flex;
+    // stop here
+    .img {
+      width: 300px;
     }
   }
 }

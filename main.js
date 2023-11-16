@@ -1,6 +1,6 @@
 const hamburger = document.querySelector("#hamburger");
 const navMenu = document.querySelector(".nav-wrapper");
-
+const bodyContent = document.querySelector(".main-content");
 let active = false;
 
 const flipTheSwitch = () => {
@@ -10,3 +10,6 @@ const flipTheSwitch = () => {
 };
 
 hamburger.addEventListener("click", flipTheSwitch);
+bodyContent.addEventListener("click", () => {
+  if (active) flipTheSwitch();
+});

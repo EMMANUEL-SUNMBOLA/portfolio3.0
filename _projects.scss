@@ -49,8 +49,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    // gap: 5%;
     .project-card {
-      max-width: 260px;
+      width: 45%;
+      max-width: 600px;
     }
   }
 }

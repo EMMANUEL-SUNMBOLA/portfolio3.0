@@ -7,8 +7,9 @@ main {
     font-size: variables.$intro_text;
     color: variables.$light-green;
     font-weight: 700;
-    font-family: "monospace", "SpaceMono", "Lucida Sans", "Lucida Sans Regular",
-      "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: "Roboto Mono", "monospace", "SpaceMono", "Lucida Sans",
+      "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+      Verdana, sans-serif;
     padding: 0 0 1.5rem 0;
   }
   h1 {
@@ -41,7 +42,7 @@ main {
       width: -moz-fit-content;
       width: fit-content;
       margin: 3rem 0;
-      font-family: monospace;
+      font-family: "Roboto Mono", monospace;
     }
   }
 }
@@ -60,6 +61,15 @@ main {
     }
     .view_work {
       font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    h1,
+    h3 {
+      font-size: 4.5rem;
     }
   }
 }

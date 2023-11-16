@@ -101,6 +101,9 @@ nav {
     }
   }
 }
+.nav-num {
+  font-family: "Roboto Mono", monospace;
+}
 
 @media (min-width: 680px) {
   nav {
@@ -132,7 +135,7 @@ nav {
   button {
     padding: 1rem;
     margin: 0;
-    width: auto;
-    height: auto;
+    width: auto !important;
+    height: auto !important;
   }
 }

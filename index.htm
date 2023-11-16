@@ -10,6 +10,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@200&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/style.css" />
     <link rel="shortcut icon" href="images/caveman.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,13 +27,21 @@
       <img src="images/caveman.png" alt="" />
       <div class="nav-wrapper" data-visible="false">
         <ul>
-          <li><span>01.</span><a href="#about" title="about">about</a></li>
           <li>
-            <span>02.</span><a href="#exp" title="experience">experience</a>
+            <span class="nav-num">01.</span
+            ><a href="#about" title="about">about</a>
           </li>
-          <li><span>03.</span><a href="#work" title="work">work</a></li>
           <li>
-            <span>04.</span><a href="#contact" title="contact">contact</a>
+            <span class="nav-num">02.</span
+            ><a href="#exp" title="experience">experience</a>
+          </li>
+          <li>
+            <span class="nav-num">03.</span
+            ><a href="#work" title="work">work</a>
+          </li>
+          <li>
+            <span class="nav-num">04.</span
+            ><a href="#contact" title="contact">contact</a>
           </li>
           <button>resume</button>
         </ul>
@@ -39,238 +53,248 @@
         <div class="bar bar3"></div>
       </div>
     </nav>
+    <div class="master-body">
+      <div class="side" title="fixedsidebar">
+        <div class="side-content">
+          <!-- <marquee behavior="alternate" direction="right">caveman caveman caveman</marquee> -->
+          <a target="_blank" href="https://github.com/EMMANUEL-SUNMBOLA"
+            ><i class="fa-brands fa-github" title="my github"></i
+          ></a>
+          <br />
+          <a target="_blank" href="https://twitter.com/SunmbolaAdedayo"
+            ><i class="fa-brands fa-twitter" title="my twitter"></i
+          ></a>
+          <br />
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/sunmbola-emmanuel-87a348247"
+            ><i class="fa-brands fa-linkedin" title="my linkedin"></i
+          ></a>
+          <br />
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=2349030408140"
+            ><i class="fa-brands fa-whatsapp" title="my whatsapp"></i
+          ></a>
+          <br />
+          <div class="line"></div>
+        </div>
+      </div>
 
-    <div class="side" title="fixedsidebar">
-      <!-- <marquee behavior="alternate" direction="right">caveman caveman caveman</marquee> -->
-      <a target="_blank" href="https://github.com/EMMANUEL-SUNMBOLA"
-        ><i class="fa-brands fa-github" title="my github"></i
-      ></a>
-      <br />
-      <a target="_blank" href="https://twitter.com/SunmbolaAdedayo"
-        ><i class="fa-brands fa-twitter" title="my twitter"></i
-      ></a>
-      <br />
-      <a
-        target="_blank"
-        href="https://www.linkedin.com/in/sunmbola-emmanuel-87a348247"
-        ><i class="fa-brands fa-linkedin" title="my linkedin"></i
-      ></a>
-      <br />
-      <a
-        target="_blank"
-        href="https://api.whatsapp.com/send?phone=2349030408140"
-        ><i class="fa-brands fa-whatsapp" title="my whatsapp"></i
-      ></a>
-      <br />
-      <div class="line"></div>
-    </div>
-
-    <div class="right">
-      <a
-        target="_blank"
-        href="mailto:adedayoemmanuel729@gmail.com?subject=Hi Emmanuel"
-        title="email"
-        >sunmbola emmanuel</a
-      >
-      <div class="line"></div>
-    </div>
-
-    <main id="main">
-      <h2>Hi, my name is</h2>
-      <h1 title="my name">sunmbola emmanuel</h1>
-      <h3>I build for the universe</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-        asperiores suscipit odio dolorum excepturi perferendis? Odio, sapiente
-        rerum nam *cum* accusamus amet quisquam, illum ut quo praesentium fugit
-        nemo ea facere doloremque ullam pariatur omnis eum unde sed animi, ad
-        obcaecati. Dolorem vitae quidem aliquid voluptates! Suscipit sequi error
-        est.
-      </p>
-      <a href="#work" class="view_work">
-        <div>View my work</div>
-      </a>
-    </main>
-
-    <section class="heading-section about" id="about">
-      <h1 class="sub-heading">
-        <span class="sub-heading-numbering"> .01</span> about me
-        <div class="hline"></div>
-      </h1>
-      <div class="pmg">
-        <div class="ps">
+      <div class="main-content">
+        <main id="main">
+          <h2>Hi, my name is</h2>
+          <h1 title="my name">sunmbola emmanuel</h1>
+          <h3>I build for the universe</h3>
           <p>
-            Hello!,My name is <span>SUNMBOLA EMMANUEL</span>,I am a
-            self-employed developer, I also enjoy building fun and responsive
-            websites/webapps that can solve day to day problems
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            asperiores suscipit odio dolorum excepturi perferendis? Odio,
+            sapiente rerum nam *cum* accusamus amet quisquam, illum ut quo
+            praesentium fugit nemo ea facere doloremque ullam pariatur omnis eum
+            unde sed animi, ad obcaecati. Dolorem vitae quidem aliquid
+            voluptates! Suscipit sequi error est.
           </p>
+          <a href="#work" class="view_work">
+            <div>View my work</div>
+          </a>
+        </main>
+
+        <section class="heading-section about" id="about">
+          <h1 class="sub-heading">
+            <span class="sub-heading-numbering"> 01.</span> about me
+            <div class="hline"></div>
+          </h1>
+          <div class="pmg">
+            <div class="ps">
+              <p>
+                Hello!,My name is <span>SUNMBOLA EMMANUEL</span>,I am a
+                self-employed developer, I also enjoy building fun and
+                responsive websites/webapps that can solve day to day problems
+              </p>
+              <p>
+                I'm studying <span>PHYSICS</span> in the prestigious University
+                of Agriculture Abeokuta (<span>FUNAAB</span>).When I'm not
+                coding I enjoy gaming and solving jigsaw puzzles
+              </p>
+              <div class="tech">
+                <h5>here are some a few technologies I've been working with</h5>
+                <ul>
+                  <li>html 5</li>
+                  <li>css</li>
+                  <li>scss</li>
+                  <li>bootstrap</li>
+                  <li>php</li>
+                </ul>
+              </div>
+            </div>
+            <div class="img">
+              <img src="images/Snapchat-365126594.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="heading-section" id="exp">
+          <h1 class="sub-heading">
+            <span class="sub-heading-numbering">02.</span> my experiences
+            <div class="hline"></div>
+          </h1>
           <p>
-            I'm studying <span>PHYSICS</span> in the prestigious University of
-            Agriculture Abeokuta (<span>FUNAAB</span>).When I'm not coding I
-            enjoy gaming and solving jigsaw puzzles
+            I have not worked in any official firm as at the time of launching
+            of this website , but I've worked on a lot of personal projects and
+            looking to contribute to open source
           </p>
-          <div class="tech">
-            <h5>here are some a few technologies I've been working with</h5>
-            <ul>
-              <li>html 5</li>
-              <li>css</li>
-              <li>scss</li>
-              <li>bootstrap</li>
-              <li>php</li>
-            </ul>
+        </section>
+
+        <section class="heading-section" id="work">
+          <h1 class="sub-heading">
+            <span class="sub-heading-numbering">03.</span> some things I've
+            built
+            <div class="hline"></div>
+          </h1>
+
+          <div class="work-wrapper projects-container">
+            <!-- flowerly -->
+
+            <div class="each-work project-card">
+              <div class="image-container imgdv">
+                <a
+                  target="_blank"
+                  href="https://candid-puffpuff-23283e.netlify.app/"
+                >
+                  <img src="images/flowerly.png" alt="" />
+                </a>
+              </div>
+              <div class="project-details">
+                <h1 title="flowerly">flowerly</h1>
+                <a
+                  target="_blank"
+                  href="https://github.com/EMMANUEL-SUNMBOLA/FLOWERLY"
+                  ><i class="fa-brands fa-github"></i></a
+                ><a
+                  target="_blank"
+                  href="https://candid-puffpuff-23283e.netlify.app/"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+              <div class="icons">
+                <span><i class="fa-brands fa-html5"></i></span>
+                <span><i class="fa-brands fa-css3"></i></span>
+                <span><i class="fa-brands fa-sass"></i></span>
+              </div>
+            </div>
+            <!-- jerk travels -->
+
+            <div class="each-work project-card">
+              <div class="image-container imgdv">
+                <a
+                  target="_blank"
+                  href="https://candid-puffpuff-23283e.netlify.app/"
+                >
+                  <img src="images/flowerly.png" alt="" />
+                </a>
+              </div>
+              <div class="project-details">
+                <h1 title="flowerly">flowerly</h1>
+                <a
+                  target="_blank"
+                  href="https://github.com/EMMANUEL-SUNMBOLA/FLOWERLY"
+                  ><i class="fa-brands fa-github"></i></a
+                ><a
+                  target="_blank"
+                  href="https://candid-puffpuff-23283e.netlify.app/"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+              <div class="icons">
+                <span><i class="fa-brands fa-html5"></i></span>
+                <span><i class="fa-brands fa-css3"></i></span>
+                <span><i class="fa-brands fa-sass"></i></span>
+              </div>
+            </div>
+            <!-- buiild by .... -->
+
+            <div class="each-work project-card">
+              <div class="image-container imgdv">
+                <a
+                  target="_blank"
+                  href="https://candid-puffpuff-23283e.netlify.app/"
+                >
+                  <img src="images/flowerly.png" alt="" />
+                </a>
+              </div>
+              <div class="project-details">
+                <h1 title="flowerly">flowerly</h1>
+                <a
+                  target="_blank"
+                  href="https://github.com/EMMANUEL-SUNMBOLA/FLOWERLY"
+                  ><i class="fa-brands fa-github"></i></a
+                ><a
+                  target="_blank"
+                  href="https://candid-puffpuff-23283e.netlify.app/"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+              <div class="icons">
+                <span><i class="fa-brands fa-html5"></i></span>
+                <span><i class="fa-brands fa-css3"></i></span>
+                <span><i class="fa-brands fa-sass"></i></span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="img">
-          <img src="images/Snapchat-365126594.jpg" alt="" />
+
+          <a
+            target="_blank"
+            href="https://github.com/EMMANUEL-SUNMBOLA?tab=repositories"
+            class="view_work see_more"
+            ><div>
+              wanna see more
+              <i class="fa-sharp fa-solid fa-arrow-right"></i></div
+          ></a>
+        </section>
+
+        <section class="contact heading-section" id="contact">
+          <h5 class="sub-heading">
+            <span class="sub-heading-numbering">04. what's next </span>
+          </h5>
+          <h1>get in touch</h1>
+          <p>
+            Got a question or proposal , or just want to say hello ? Go ahead.
+          </p>
+          <form action="">
+            <input type="text" placeholder="Enter your name..." />
+            <input type="email" placeholder="Enter your email address..." />
+            <input
+              type="text"
+              class="mess"
+              placeholder="Type message here..."
+            /><br />
+            <button type="submit">Shoot</button>
+          </form>
+          <div class="icon-box">
+            <div class="icon-wrapper"><i class="fa-brands fa-github"></i></div>
+            <div class="icon-wrapper"><i class="fa-brands fa-github"></i></div>
+            <div class="icon-wrapper"><i class="fa-brands fa-github"></i></div>
+          </div>
+        </section>
+      </div>
+      <div class="right">
+        <div class="right-content">
+          <a
+            target="_blank"
+            href="mailto:adedayoemmanuel729@gmail.com?subject=Hi Emmanuel"
+            title="email"
+            >sunmbola emmanuel</a
+          >
+          <div class="line"></div>
         </div>
       </div>
-    </section>
-
-    <section class="heading-section" id="exp">
-      <h1 class="sub-heading">
-        <span class="sub-heading-numbering">.02</span> my experiences
-        <div class="hline"></div>
-      </h1>
-      <p>
-        I have not worked in any official firm as at the time of launching of
-        this website , but I've worked on a lot of personal projects and looking
-        to contribute to open source
-      </p>
-    </section>
-
-    <section class="heading-section" id="work">
-      <h1 class="sub-heading">
-        <span class="sub-heading-numbering">.03</span> some things I've built
-        <div class="hline"></div>
-      </h1>
-
-      <div class="work-wrapper projects-container">
-        <!-- flowerly -->
-
-        <div class="each-work project-card">
-          <div class="image-container imgdv">
-            <a
-              target="_blank"
-              href="https://candid-puffpuff-23283e.netlify.app/"
-            >
-              <img src="images/flowerly.png" alt="" />
-            </a>
-          </div>
-          <div class="project-details">
-            <h1 title="flowerly">flowerly</h1>
-            <a
-              target="_blank"
-              href="https://github.com/EMMANUEL-SUNMBOLA/FLOWERLY"
-              ><i class="fa-brands fa-github"></i></a
-            ><a
-              target="_blank"
-              href="https://candid-puffpuff-23283e.netlify.app/"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-          <div class="icons">
-            <span><i class="fa-brands fa-html5"></i></span>
-            <span><i class="fa-brands fa-css3"></i></span>
-            <span><i class="fa-brands fa-sass"></i></span>
-          </div>
-        </div>
-        <!-- jerk travels -->
-
-        <div class="each-work project-card">
-          <div class="image-container imgdv">
-            <a
-              target="_blank"
-              href="https://candid-puffpuff-23283e.netlify.app/"
-            >
-              <img src="images/flowerly.png" alt="" />
-            </a>
-          </div>
-          <div class="project-details">
-            <h1 title="flowerly">flowerly</h1>
-            <a
-              target="_blank"
-              href="https://github.com/EMMANUEL-SUNMBOLA/FLOWERLY"
-              ><i class="fa-brands fa-github"></i></a
-            ><a
-              target="_blank"
-              href="https://candid-puffpuff-23283e.netlify.app/"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-          <div class="icons">
-            <span><i class="fa-brands fa-html5"></i></span>
-            <span><i class="fa-brands fa-css3"></i></span>
-            <span><i class="fa-brands fa-sass"></i></span>
-          </div>
-        </div>
-        <!-- buiild by .... -->
-
-        <div class="each-work project-card">
-          <div class="image-container imgdv">
-            <a
-              target="_blank"
-              href="https://candid-puffpuff-23283e.netlify.app/"
-            >
-              <img src="images/flowerly.png" alt="" />
-            </a>
-          </div>
-          <div class="project-details">
-            <h1 title="flowerly">flowerly</h1>
-            <a
-              target="_blank"
-              href="https://github.com/EMMANUEL-SUNMBOLA/FLOWERLY"
-              ><i class="fa-brands fa-github"></i></a
-            ><a
-              target="_blank"
-              href="https://candid-puffpuff-23283e.netlify.app/"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-          <div class="icons">
-            <span><i class="fa-brands fa-html5"></i></span>
-            <span><i class="fa-brands fa-css3"></i></span>
-            <span><i class="fa-brands fa-sass"></i></span>
-          </div>
-        </div>
-      </div>
-
-      <a
-        target="_blank"
-        href="https://github.com/EMMANUEL-SUNMBOLA?tab=repositories"
-        class="view_work see_more"
-        ><div>
-          wanna see more <i class="fa-sharp fa-solid fa-arrow-right"></i></div
-      ></a>
-    </section>
-
-    <section class="contact heading-section" id="contact">
-      <h5 class="sub-heading">
-        <span class="sub-heading-numbering">.04 what's next </span>
-      </h5>
-      <h1>get in touch</h1>
-      <p>Got a question or proposal , or just want to say hello ? Go ahead.</p>
-      <form action="">
-        <input type="text" placeholder="Enter your name..." />
-        <input type="email" placeholder="Enter your email address..." />
-        <input
-          type="text"
-          class="mess"
-          placeholder="Type message here..."
-        /><br />
-        <button type="submit">Shoot</button>
-      </form>
-      <div class="icon-box">
-        <div class="icon-wrapper"><i class="fa-brands fa-github"></i></div>
-        <div class="icon-wrapper"><i class="fa-brands fa-github"></i></div>
-        <div class="icon-wrapper"><i class="fa-brands fa-github"></i></div>
-      </div>
-    </section>
-
+    </div>
     <footer>
       <marquee behavior="" direction="right">
         CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-
       </marquee>
     </footer>
+
     <script src="/main.js"></script>
   </body>
 </html>

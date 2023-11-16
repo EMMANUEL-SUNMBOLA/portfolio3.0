@@ -94,6 +94,10 @@ nav .nav-wrapper ul li span {
   margin-right: 5px;
 }
 
+.nav-num {
+  font-family: "Roboto Mono", monospace;
+}
+
 @media (min-width: 680px) {
   nav {
     padding: 1rem 3rem;
@@ -122,8 +126,8 @@ nav .nav-wrapper ul li span {
   button {
     padding: 1rem;
     margin: 0;
-    width: auto;
-    height: auto;
+    width: auto !important;
+    height: auto !important;
   }
 }
 main {
@@ -134,7 +138,7 @@ main h2 {
   font-size: 1rem;
   color: #60f7d2;
   font-weight: 700;
-  font-family: "monospace", "SpaceMono", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Roboto Mono", "monospace", "SpaceMono", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 0 0 1.5rem 0;
 }
 main h1 {
@@ -166,7 +170,7 @@ main .view_work div {
   width: -moz-fit-content;
   width: fit-content;
   margin: 3rem 0;
-  font-family: monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 @media (min-width: 680px) {
@@ -184,6 +188,12 @@ main .view_work div {
   }
   main .view_work {
     font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  main h1,
+  main h3 {
+    font-size: 4.5rem;
   }
 }
 .work-wrapper {
@@ -235,7 +245,8 @@ main .view_work div {
     justify-content: center;
   }
   .work-wrapper .project-card {
-    max-width: 260px;
+    width: 45%;
+    max-width: 600px;
   }
 }
 .image_after, .heading-section .pmg .img::after {
@@ -340,7 +351,7 @@ main .view_work div {
   font-size: 1rem;
   padding-right: 0.5rem;
   color: #60f7d2;
-  font-family: monospace;
+  font-family: "Roboto Mono", monospace;
 }
 .heading-section .sub-heading .hline {
   display: block;
@@ -396,6 +407,14 @@ main .view_work div {
     font-size: 1.4rem;
   }
 }
+@media (min-width: 1024px) {
+  .pmg {
+    display: flex;
+  }
+  .pmg .img {
+    width: 300px;
+  }
+}
 .see_more {
   text-decoration: none;
 }
@@ -411,13 +430,20 @@ main .view_work div {
   font-family: monospace;
 }
 
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Mono', monospace;
+*/
 * {
   margin: 0;
   border: 0;
   padding: 0;
   outline: 0;
-  font-family: sans-serif;
+  font-family: "Inter", "sans-serif";
   box-sizing: border-box;
+  line-height: inherit;
+  color: inherit;
 }
 
 html {
@@ -430,6 +456,10 @@ body {
   background-color: #041b15;
 }
 
+marquee {
+  color: #ccd6f6;
+}
+
 .side {
   padding: 0px 10px 0px 10px;
   width: 30px;
@@ -438,7 +468,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  position: fixed;
   z-index: 1;
   left: 0;
 }
@@ -461,7 +490,6 @@ body {
 
 .right {
   height: 100%;
-  position: fixed;
   z-index: 1;
   right: 0;
   display: none;
@@ -487,4 +515,27 @@ body {
   width: 2px;
   height: 160px;
   background-color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .master-body {
+    display: flex;
+  }
+  .master-body .right,
+  .master-body .side {
+    display: flex;
+    padding: 4rem;
+  }
+  .master-body .right .side-content,
+  .master-body .right .right-content,
+  .master-body .side .side-content,
+  .master-body .side .right-content {
+    position: fixed;
+    bottom: -50px;
+    line-height: 4rem;
+  }
+  .master-body .right .right-content,
+  .master-body .side .right-content {
+    line-height: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
