@@ -1,0 +1,75 @@
+@use "variables";
+
+main {
+  padding-top: 150px;
+  padding-inline: 1.7rem;
+  h2 {
+    font-size: variables.$intro_text;
+    color: variables.$light-green;
+    font-weight: 700;
+    font-family: "Roboto Mono", "monospace", "SpaceMono", "Lucida Sans",
+      "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+      Verdana, sans-serif;
+    padding: 0 0 1.5rem 0;
+  }
+  h1 {
+    text-transform: capitalize;
+    font-size: variables.$name_text;
+    color: variables.$white;
+
+    padding-bottom: 1rem;
+  }
+  h3 {
+    color: variables.$grey;
+    font-size: variables.$name_text;
+    padding-bottom: 1.5rem;
+  }
+  p {
+    color: variables.$grey;
+    font-size: variables.$description_text;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  .view_work {
+    text-decoration: none;
+    div {
+      color: variables.$light-green;
+      border: 1px solid variables.$light-green;
+      border-radius: 0.25rem;
+      padding: 1.25rem 1.75rem;
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin: 3rem 0;
+      font-family: "Roboto Mono", monospace;
+    }
+  }
+}
+
+@media (min-width: 680px) {
+  main {
+    padding-inline: 3rem;
+    h1,
+    h3 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+      line-height: 1.5rem;
+    }
+    .view_work {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    h1,
+    h3 {
+      font-size: 4.5rem;
+    }
+  }
+}

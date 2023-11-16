@@ -1,0 +1,75 @@
+@use "variables";
+
+@use "extended";
+
+.contact {
+  .icon-box {
+    display: flex;
+    font-size: 25px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5rem;
+  }
+  .sub-heading {
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+    color: variables.$white;
+  }
+  p {
+    @extend .para;
+  }
+  input {
+    display: block;
+    outline: none;
+    border: 1px solid variables.$light-green;
+    background-color: variables.$green;
+    color: variables.$grey;
+    border-radius: 4px;
+    padding: 1rem;
+    margin: auto;
+    margin-bottom: 0.8rem;
+    color: variables.$white;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 100%;
+  }
+  button {
+    display: block;
+    color: variables.$light-green;
+    border: 1px solid variables.$light-green;
+    background-color: variables.$green;
+    border-radius: 0.25rem;
+    padding: 1rem 1.3rem;
+    margin-right: 0rem;
+    margin: auto;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    text-decoration: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-family: "sfMono", "SpaceMono", "Lucida Sans", "Lucida Sans Regular",
+      "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .mess {
+    aspect-ratio: 2;
+    margin-bottom: 0;
+  }
+  i {
+    color: variables.$white;
+  }
+  text-align: center;
+}
+
+@media (min-width: 680px) {
+  .contact {
+    input {
+      width: 70%;
+    }
+  }
+}

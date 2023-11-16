@@ -1,0 +1,58 @@
+@use "variables";
+
+.work-wrapper {
+  flex-direction: column;
+  align-items: center;
+  .project-card {
+    max-width: 300px;
+    aspect-ratio: 0.9;
+    margin: auto;
+    border-radius: 10px;
+    i {
+      font-size: 25px;
+      margin-right: 9px;
+      color: variables.$white;
+    }
+    .project-details {
+      background-color: variables.$nav_menu_bg;
+      padding: 1rem 1rem 0 1rem;
+      display: flex;
+      align-items: center;
+      color: variables.$white;
+      h1 {
+        margin-right: 5%;
+        text-transform: capitalize;
+      }
+    }
+    .icons {
+      background-color: variables.$nav_menu_bg;
+      padding: 1rem;
+      border-radius: 0 0 10px 10px;
+    }
+    .image-container {
+      width: 100%;
+      height: 56%;
+      a {
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px 10px 0px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 680px) {
+  .work-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    // gap: 5%;
+    .project-card {
+      width: 45%;
+      max-width: 600px;
+    }
+  }
+}

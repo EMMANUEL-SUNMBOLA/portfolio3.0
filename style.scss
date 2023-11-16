@@ -1,19 +1,43 @@
-$green: #041b15;
-$light-green: #60f7d2;
-$lighter-green: #0e3229;
-// $green:black;
-// $light-green:#fff;
-$grey: #8892b0;
-$white: #ccd6f6;
-$blue:#112240;
+@use "variables";
 
+@use "nav";
+@use "main";
+@use "projects";
+@use "contact";
+@use "headings";
+@use "extended";
+
+.see_more {
+  text-decoration: none;
+  div {
+    color: variables.$light-green;
+    border: 1px solid variables.$light-green;
+    border-radius: 0.25rem;
+    padding: 1.25rem 1.75rem;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 3rem 0;
+    font-family: monospace;
+  }
+}
+
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Mono', monospace;
+*/
 * {
   margin: 0;
   border: 0;
   padding: 0;
   outline: 0;
-  font-family: sans-serif;
-//   outline: 1px solid $light-green;
+  font-family: "Inter", "sans-serif";
+  //   outline: 1px solid variables.$light-green;
+  box-sizing: border-box;
+  line-height: inherit;
+  color: inherit;
 }
 
 html {
@@ -23,88 +47,29 @@ html {
 }
 
 body {
-  background-color: $green;
+  background-color: variables.$green;
 }
-
-nav {
-  background: $lighter-green;
-  display: flex;
-  align-items: center;
-  height: 100px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 15%;
-  img {
-    width: 50px;
-    margin-left: 40px;
-    filter: grayscale(2);
-  }
-  button {
-    width: 65px;
-    height: 40px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    color: $light-green;
-    border: 1px solid $light-green;
-    background-color: inherit;
-    margin-right: 20px;
-    &:hover {
-      background-color: $lighter-green;
-    }
-  }
-  ul {
-    width: 700px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0px 0px 0px auto;
-    li {
-      list-style-type: none;
-      counter-increment: li;
-      a {
-        font-size: 15px;
-        font-weight: 700;
-        text-transform: capitalize;
-        text-decoration: none;
-        color: $grey;
-        transition: color 0.3s ease-in-out;
-        &:hover {
-          color: $light-green;
-        }
-        &:target {
-          border: 1px solid red;
-        }
-      }
-      &::before {
-        content: counter(li);
-        color: $light-green;
-        width: 1em;
-        margin-right: 5px;
-      }
-    }
-  }
+marquee {
+  color: variables.$white;
 }
 
 .side {
   padding: 0px 10px 0px 10px;
   width: 30px;
   height: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  position: fixed;
   z-index: 1;
   left: 0;
   a {
     font-size: 25px;
     text-decoration: none;
-    color: $grey;
-    transition: transform 0.3s ease-in-out;
+    color: variables.$grey;
+    transition: 0.3s ease-in-out;
     &:hover {
-      color: $light-green;
+      color: variables.$light-green;
       transform: scale(1.2);
     }
   }
@@ -118,10 +83,9 @@ nav {
 
 .right {
   height: 100%;
-  position: fixed;
   z-index: 1;
   right: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
@@ -129,13 +93,13 @@ nav {
     text-decoration: none;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    color: $grey;
+    color: variables.$grey;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 5px;
     transition: color 0.3s ease-in-out;
     &:hover {
-      color: $light-green;
+      color: variables.$light-green;
     }
   }
   .line {
@@ -146,326 +110,22 @@ nav {
   }
 }
 
-main {
-  margin: 50px auto;
-  padding-top: 7vmax;
-  line-height: 70px;
-  width: 80%;
-  height: 100vh;
-  h2 {
-    color: $light-green;
-    font-weight: 700;
-  }
-  h1 {
-    text-transform: capitalize;
-    font-size: 47px;
-    color: $white;
-  }
-  h3 {
-    color: $grey;
-    font-size: 48px;
-  }
-  p {
-    color: $grey;
-    width: 52%;
-    font-size: 20px;
-    line-height: normal;
-    line-break: 20px;
-  }
-}
-
-#work{
-    text-align: center;
-    margin: 150px auto;
-    width: 90%;
-    height: 100vh;
-    h1 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: 30px;
-        color: $white;
-        text-transform: capitalize;
-        .hline {
-          margin: 10px 0px 0px 20px;
-          height: 1px;
-          width: 250px;
-          background-color: #fff;
-        }
-      }
-      button{
-        margin: 50px auto;
-        width: 100px;
-        height: 7%;
-        background-color: transparent;
-        border-radius: 5px;
-        transition: color .3s ease-in-out;
-        text-transform: uppercase;
-        border: 1px solid $light-green;
-        a{
-            text-decoration: none;
-            color: $grey;
-        }
-        &:hover{
-            background-color: $lighter-green;
-            color: $white;
-        }
-      }
-      .work-wrapper{
-        margin: 50px 0px 0px 0px;
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        flex-direction: row;
-        gap: 10%;
-        .each-work{
-            width: 40%;
-            height: 320px;
-            background-color: $blue;
-            &:hover{
-                filter:grayscale(0.4) ;
-            }
-            h1{
-                color: $white;
-                font-size: 25px;
-                i{
-                    margin-left: 10px;
-                    font-size: 17px;
-                    color: $grey;
-                    transition: color .3s ease-in-out;
-                    &:hover{
-                        color: $light-green;
-                    }
-                }
-            }
-            span{
-                font-size: 35px;
-            }
-            .fa-html5{
-                color: red
-            }
-            .fa-css3{
-                color: blue;
-            }
-            .fa-sass{
-                color: pink;
-            }
-            .imgdv{
-
-                img{
-                    width: 100%;
-                }
-            }
-        }
-      }
-}
-
-.contact {
-    height: 50vh;
-  width: 80%;
-  margin: 280px auto;
-  text-align: center;
-  line-height: 40px;
-  h5 {
-    color: $light-green;
-    text-transform: capitalize;
-    font-size: 20px;
-  }
-  h1 {
-    font-size: 47px;
-    color: $white;
-    text-transform: capitalize;
-  }
-  p {
-    color: $grey;
-  }
-  form {
-    input {
-      width: 50%;
-      height: 30px;
-      margin-top: 10px;
-      border-radius: 2%;
-      color: $grey;
-      font-size: 18px;
-      padding-left: 10px;
-    }
-    button {
-      background: transparent;
-      border: 1px solid $light-green;
-      height: 40px;
-      width: 75px;
-      margin-top: 20px;
-      border-radius: 2px;
-      transition: background-color 0.5s ease-in-out;
-      &:hover {
-        background-color: $lighter-green;
-      }
-    }
-    .mess {
-      height: 200px;
-    }
-  }
-}
-
-.about {
-    width: 80%;
-    margin: 50px auto 40px auto;
-    height: 100vh;
-    h1 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: 30px;
-        color: $white;
-        text-transform: capitalize;
-        .hline {
-          margin: 10px 0px 0px 20px;
-          height: 1px;
-          width: 250px;
-          background-color: #fff;
-        }
-      }
-  .pmg {
+@media (min-width: 1024px) {
+  .master-body {
     display: flex;
-
-    .ps {
-      p {
-        width: 70%;
-        color: $grey;
-        font-size: 20px;
-        margin-top: 20px;
-        span {
-          color: $light-green;
-        }
+    .right,
+    .side {
+      display: flex;
+      padding: 4rem;
+      .side-content,
+      .right-content {
+        position: fixed;
+        bottom: -50px;
+        line-height: 4rem;
       }
-      .tech{
-        margin-top: 20px;
-        h5{
-            color: $grey;
-            text-transform: uppercase;
-            font-size: 20px;
-        }
-        ul{
-            li{
-                list-style-image: none;
-                color: $grey;
-                font-size: 20px;
-                text-transform: uppercase;
-            }
-        }
-      }
-    }
-    .img {
-      img {
-        width: 220px;
-        height: 270px;
+      .right-content {
+        line-height: 1rem;
       }
     }
   }
-
-}
-
-#exp{
-    margin: 50px auto;
-    width: 80%;
-    h1 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: 30px;
-        color: $white;
-        text-transform: capitalize;
-        .hline {
-          margin: 10px 0px 0px 20px;
-          height: 1px;
-          width: 250px;
-          background-color: #fff;
-        }
-    }
-    p{
-        margin: 40px auto 0px auto;
-        font-size: 20px;
-        color: $grey;
-        width: 80%;
-    }
-}
-
-@media (max-width: 424px) {
-  nav {
-    ul {
-      display: none;
-    }
-    button {
-      display: none;
-    }
-  }
-  .about{
-    .pmg{
-        .img{
-            img{
-                width: 100px;
-                height: 100px;
-                aspect-ratio: 1;
-            }
-        }
-    }
-  }
-  #work{
-    .work-wrapper{
-        flex-direction: column;
-        align-items: center;
-        .each-work{
-            width: 80%;
-            margin: 20px 0px;
-        }
-    }
-  }
-  .contact{
-    margin: 620px auto 140px auto;
-  }
-}
-@media (max-width: 280px){
-    .about{
-        margin: 700px auto;
-    }
-    .contact{
-        margin: 800px auto 300px auto;
-      }
-}
-
-@media (max-width: 360px){
-    // samsung s8+
-    .about{
-        margin: 400px auto;
-    }
-    .contact{
-        margin: 800px auto 200px auto;
-      }
-}
-@media (max-width: 393px){
-    //pixel 3xl
-    .about{
-        margin: 300px auto;
-    }
-    .contact{
-        margin: 700px auto 150px auto;
-      }
-}
-@media (max-width: 375px){
-    // iphone se
-    .about{
-        margin: 320px auto;
-    }
-    .contact{
-        margin: 800px auto 200px auto;
-      }
-}
-@media (max-width: 229px){
-    // iphone se
-    .about{
-        margin: 720px auto 500px auto;
-    }
-    .contact{
-        margin: 800px auto 200px auto;
-      }
 }
