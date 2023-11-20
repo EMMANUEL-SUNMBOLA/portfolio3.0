@@ -139,3 +139,9 @@ nav {
     height: auto !important;
   }
 }
+
+@media(max-width: 600px){
+  nav{
+    height: 10%;
+  }
+}
